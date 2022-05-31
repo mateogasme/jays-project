@@ -1,0 +1,753 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+br {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857;
+  color: #fff;
+  background: #1a1a1a;
+  scrollbar-face-color: #1a1a1a;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  border: 3px solid #1a1a1a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3ae2), to(#6d78eb));
+  background-image: linear-gradient(#2a3ae2, #6d78eb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1a28be), to(#404fe5));
+  background-image: linear-gradient(#1a28be, #404fe5);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#141f92), to(#1d2dd5));
+  background-image: linear-gradient(#141f92, #1d2dd5);
+}
+
+i {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #6d78eb;
+  -webkit-box-shadow: 0px 0px 2px #1a1a1a;
+          box-shadow: 0px 0px 2px #1a1a1a;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav img {
+  width: 50px;
+  height: 50px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+header nav ul li a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -0.001px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #c6ddff;
+}
+
+header nav.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav.right span {
+  font-size: 20px;
+  font-weight: 400;
+  color: #6d78eb;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+header nav.right span:hover {
+  background: #e6e6e6;
+}
+
+header nav.right .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 15px;
+}
+
+header nav.right .social a {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  color: #6d78eb;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header nav.right .social a:hover {
+  background: #e6e6e6;
+}
+
+header nav.right .social a i {
+  font-size: calc(15px + (20 - 20 * ((100vw - 300px / (1600 - 300)) / (1600 - 300))));
+}
+
+.getting-started {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  height: calc(100vh + 100px - 20px);
+  width: 100%;
+}
+
+.getting-started h1 {
+  font-size: calc(20px + 2vw);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.getting-started h1 span {
+  font-size: inherit;
+  font-weight: 600;
+  -webkit-animation: color 5.2s infinite;
+          animation: color 5.2s infinite;
+}
+
+@-webkit-keyframes color {
+  0% {
+    color: #6d78eb;
+  }
+  50% {
+    color: #ff7987;
+  }
+  75% {
+    color: #52ff98;
+  }
+  100% {
+    color: #6d78eb;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: #6d78eb;
+  }
+  50% {
+    color: #ff7987;
+  }
+  75% {
+    color: #52ff98;
+  }
+  100% {
+    color: #6d78eb;
+  }
+}
+
+.getting-started p {
+  font-size: calc(16px + 1vw);
+  font-weight: 400;
+  width: 850px;
+  text-align: center;
+  color: #cacaca;
+  margin-bottom: 20px;
+}
+
+.getting-started .v {
+  line-height: 1.5;
+  font-size: calc(12px + 1vw);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.getting-started .v .version {
+  background: #6d78eb;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.getting-started .v .version i {
+  font-size: inherit;
+  padding: 10px 5px;
+}
+
+.getting-started .button {
+  background: #6d78eb;
+  padding: 15px 25px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: calc(12px + 1vw);
+  text-decoration: none;
+  margin-top: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.getting-started .button i {
+  color: #fff;
+}
+
+.getting-started .button:hover {
+  background: #fff;
+  color: #6d78eb;
+}
+
+.getting-started .button:hover i {
+  color: #6d78eb;
+  -webkit-animation: sheet 1s infinite;
+          animation: sheet 1s infinite;
+}
+
+@-webkit-keyframes sheet {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes sheet {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+.blue {
+  color: #6d78eb;
+  font-weight: 600;
+}
+
+.red {
+  color: #ffdd62;
+  font-weight: 600;
+}
+
+.green {
+  color: #52ff98;
+  font-weight: 600;
+}
+
+.yellow {
+  color: #ffdd62;
+  font-weight: 600;
+}
+
+.install {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  height: calc(100vh - 100px);
+  width: 100%;
+  text-align: center;
+}
+
+.install .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 20px;
+  height: calc(100vh - 100px);
+}
+
+.install .content .npm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.install .content .npm .title {
+  text-align: center;
+}
+
+.install .content .npm .title i {
+  font-size: calc(20px + 2vw);
+  color: #ffdd62;
+  margin-bottom: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.027);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.install .content .npm .title h2 {
+  font-size: calc(20px + 2vw);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.install .content .npm .title p {
+  font-size: calc(16px + 1vw);
+  font-weight: 400;
+  width: 650px;
+  text-align: center;
+  color: #cacaca;
+  margin-bottom: 20px;
+}
+
+.install .content .npm .highlight {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(233, 233, 233, 0.137);
+  border-radius: .5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 60%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.install .content .npm .highlight pre {
+  padding: 0;
+  margin-top: 0.65rem;
+  margin-bottom: 0.65rem;
+  white-space: pre;
+  background-color: transparent;
+  border: 0;
+}
+
+.install .content .npm .highlight pre code {
+  font-size: inherit;
+  color: #f0f0f0;
+  word-wrap: normal;
+  word-break: normal;
+  white-space: pre;
+  background-color: transparent;
+  border: 0;
+}
+
+.install .content .npm .highlight pre code .line ::before {
+  color: #afafaf;
+  content: "$ ";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.install .content .npm .highlight .copy {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: -10px;
+}
+
+.install .content .npm .highlight .copy button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: -7px 0;
+  font-size: calc(9px + 1vw);
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  line-height: 1.5;
+  color: #fff;
+  background: none;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.install .content .npm .highlight .copy button:hover {
+  color: #ffdd62;
+}
+
+.install .content .use-cdn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.install .content .use-cdn .title {
+  text-align: center;
+}
+
+.install .content .use-cdn .title i {
+  font-size: calc(20px + 2vw);
+  color: #52ff98;
+  margin-bottom: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.027);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.install .content .use-cdn .title h2 {
+  font-size: calc(20px + 2vw);
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.install .content .use-cdn p {
+  font-size: calc(16px + 1vw);
+  font-weight: 400;
+  width: 450px;
+  text-align: center;
+  color: #cacaca;
+  margin-bottom: 20px;
+}
+
+.install .content .use-cdn .button {
+  background: #52ff98;
+  padding: 15px 25px;
+  border-radius: 4px;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: calc(12px + 1vw);
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.install .content .use-cdn .button i {
+  color: #1a1a1a;
+}
+
+.install .content .use-cdn .button:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.install .content .use-cdn .button:hover i {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.install .content p {
+  font-size: calc(5px + 1vw);
+}
+
+.install .content .or {
+  font-size: calc(5px + 1vw);
+  margin-top: 5px;
+  text-align: center;
+  color: #cacaca;
+  text-decoration: none;
+}
+
+.install .content .or:hover {
+  color: #6d78eb;
+  text-decoration: underline;
+}
+
+.more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  height: calc(100vh - 75px);
+  width: 100%;
+  background: #6d78eb;
+}
+
+.more .title {
+  text-align: center;
+}
+
+.more .title i {
+  font-size: calc(20px + 2vw);
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.103);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.more .title h2 {
+  font-size: calc(30px + 2vw);
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.more .title p {
+  font-size: calc(16px + 1vw);
+  font-weight: 400;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.button-dark {
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 4px;
+  color: #6d78eb;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: calc(12px + 1vw);
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-dark i {
+  color: #6d78eb;
+  margin-right: 5px;
+}
+
+.button-dark:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.button-dark:hover i {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-animation: sheet 1s infinite;
+          animation: sheet 1s infinite;
+}
+
+/*=============================================
+=            Support page · Jays            =
+=============================================*/
+/*=====  End of Support page · Jays  ======*/
+/*# sourceMappingURL=style.css.map */
